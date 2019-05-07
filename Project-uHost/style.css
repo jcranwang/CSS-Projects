@@ -40,10 +40,31 @@ body {
 
 .main-nav_item {
   display: inline-block;
+  margin: 0 16px;
 }
 
-.main-nav_item > a {
+.main-nav_item a {
   text-decoration: none;
+  color:#014f1f;
+  padding: 2px 0;
 }
 
+.main-nav_item a:hover,
+.main-nav_item a:active {
+  color: white;
+  border-bottom: white solid 2px;
+}
 
+.main-nav_item--cta a {
+  background-color: #ff1b68;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.main-nav_item--cta a:hover,
+.main-nav_item--cta a:active {
+  color: #ff1b68;
+  background-color: white;
+  border: none;
+}
