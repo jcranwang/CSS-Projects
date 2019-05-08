@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.box-one {
+  height: 50px;
+  width: 20%;
+  background-color: red;
+  color: white;
+  padding: 100px 100px;
+  border: black solid 2px;
+  display: inline-block;
+  margin: 0;
+}
+
+.box-two {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  margin: 0;
+  width: 20%;
+}
+
+div:last-of-type:hover {
+  background-color: black;
+}
