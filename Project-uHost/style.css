@@ -13,14 +13,14 @@ body {
   padding: 8px 16px;
 }
 
-.main-header > div{
+.main-header > div {
   display: inline-block;
   vertical-align: middle;
 }
 
 .main-header_brand {
   text-decoration: none;
-  color:#014f1f;
+  color: #014f1f;
   font-size: 22px;
   font-weight: bold;
 }
@@ -45,7 +45,7 @@ body {
 
 .main-nav_item a {
   text-decoration: none;
-  color:#014f1f;
+  color: #014f1f;
   padding: 2px 0;
 }
 
@@ -67,4 +67,76 @@ body {
   color: #ff1b68;
   background-color: white;
   border: none;
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
+.plan {
+  display: inline-block;
+  background-color: #d5ffdc;
+  width: 30%;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  vertical-align: middle;
+}
+
+.plan-title {
+  color: #014f1f;
+}
+
+.price-tag {
+  color: #858585;
+}
+
+.plan-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan-list_item {
+  margin: 5px 0;
+}
+
+.plan-highlight {
+  background-color: #19b84c;
+  color: white;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.plan-recommend {
+  background-color: white;
+  color: #19b84c;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.highlight-price {
+  color: #0e4f1f;
+}
+
+.button {
+  background: #014f1f;
+  color: white;
+  font: inherit;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background-color: white;
+  color: #014f1f;
+}
+
+.button:focus {
+  outline: none;
 }
