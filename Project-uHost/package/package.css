@@ -6,3 +6,62 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
+
+main {
+  margin-top: 32px;
+}
+
+.package {
+  background-color: rgb(213, 255, 220, 0.95);
+  width: 80%;
+  border: solid 3px #0e4f1f;
+  border-left: none;
+  margin-bottom: 32px;
+}
+
+.package:hover,
+.package:active {
+  border: solid 3px #ff1b68;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  border-left: none;
+}
+
+.package a {
+  text-decoration: none;
+  display: block;
+  padding: 32px;
+}
+
+.package-title {
+  color: black;
+}
+
+.package-subtitle {
+  color: grey;
+}
+
+.package-description {
+  background-color: white;
+  border: solid #0e4f1f 2px;
+  padding: 20px;
+  font-size: 18px;
+  color: #0e4f1f;
+}
+
+.free-package {
+  text-align: right;
+  float: right;
+  border-left: solid 3px #0e4f1f;
+  border-right: none;
+}
+
+.free-package:hover,
+.free-package:active {
+  border-left: solid 3px #ff1b68;
+  border-right: none;
+  box-shadow: -2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.clear-fix {
+  clear: both;
+}
