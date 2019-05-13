@@ -7,8 +7,18 @@ body {
   margin: 0;
 }
 
+.package-background {
+  background: url("../image/plans-background.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 main {
-  margin-top: 32px;
+  margin-top: 50px;
 }
 
 .package {
@@ -17,6 +27,7 @@ main {
   border: solid 3px #0e4f1f;
   border-left: none;
   margin-bottom: 32px;
+  position: relative;
 }
 
 .package:hover,
@@ -60,6 +71,17 @@ main {
   border-left: solid 3px #ff1b68;
   border-right: none;
   box-shadow: -2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.plus-badge {
+  color: white;
+  background-color: #ff1b68;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
 }
 
 .clear-fix {

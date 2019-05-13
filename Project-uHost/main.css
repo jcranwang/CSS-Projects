@@ -7,6 +7,21 @@ body {
   margin: 0;
 }
 
+.overview {
+  background: url("./image/freedom.jpg");
+  height: 500px;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+  position: relative;
+}
+
+.overview-slogan {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+}
+
 .section-title {
   color: #2ddf5c;
   text-align: center;
