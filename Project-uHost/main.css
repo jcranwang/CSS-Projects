@@ -9,6 +9,9 @@ body {
 
 .overview {
   background: url("./image/freedom.jpg");
+  background-size: cover;
+  background-position: left 10% top 30%;
+  background-repeat: no-repeat;
   height: 500px;
   padding: 10px;
   color: white;

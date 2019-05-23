@@ -18,6 +18,12 @@
   color: #014f1f;
   font-size: 22px;
   font-weight: bold;
+  display: inline-block;
+  height: 25px;
+}
+
+.main-header_icon {
+  height: 100%;
 }
 
 .main-nav {
