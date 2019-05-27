@@ -10,3 +10,48 @@ body {
 main {
   margin-top: 100px;
 }
+
+.customer {
+  margin-bottom: 50px;
+  padding: 24px;
+}
+
+.customer-image-container {
+  width: 65%;
+  display: inline-block;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+}
+
+.customer-image-container > img {
+  width: 100%;
+  display: block;
+}
+
+.customer-info {
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 32px;
+}
+
+.customer-name {
+  color: #ff1b68;
+  font-weight: bold;
+}
+
+.customer-title {
+  color: grey;
+  font-weight: bold;
+}
+
+.customer-title > a {
+  color: grey;
+  text-decoration: none;
+}
+
+.customer-statement {
+  font-size: 20px;
+  text-align: justify;
+}
+
