@@ -8,16 +8,16 @@ body {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 6rem;
 }
 
 .customer {
-  margin-bottom: 50px;
-  padding: 24px;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
 }
 
 .customer-image-container {
-  width: 65%;
+  width: 65vw;
   display: inline-block;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
   vertical-align: middle;
@@ -32,7 +32,7 @@ main {
   width: 30%;
   display: inline-block;
   vertical-align: middle;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .customer-name {
@@ -51,7 +51,7 @@ main {
 }
 
 .customer-statement {
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: justify;
 }
 

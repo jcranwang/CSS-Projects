@@ -1,7 +1,7 @@
 .backdrop {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgb(0,0,0,0.5);
   top: 0;
   left: 0;
@@ -11,8 +11,8 @@
 
 .main-header {
   background-color: #2ddf5c;
-  width: 100%;
-  padding: 8px 16px;
+  width: 100vw;
+  padding: 0.5rem 1rem;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -27,10 +27,10 @@
 .main-header_brand {
   text-decoration: none;
   color: #014f1f;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: bold;
   display: inline-block;
-  height: 25px;
+  height: 1.6rem;
 }
 
 .main-header_icon {
@@ -41,7 +41,7 @@
   display: inline-block;
   vertical-align: middle;
   text-align: right;
-  width: calc(100% - 72px);
+  width: calc(100% - 4.5rem);
 }
 
 .main-nav_items {
@@ -52,13 +52,13 @@
 
 .main-nav_item {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-nav_item a {
   text-decoration: none;
   color: #014f1f;
-  padding: 2px 0;
+  padding: 0.1rem 0;
 }
 
 .main-nav_item a:hover,
@@ -70,7 +70,7 @@
 .main-nav_item--cta a {
   background-color: #ff1b68;
   color: white;
-  padding: 6px 12px;
+  padding: 0.4rem 0.75rem;
   border-radius: 8px;
 }
 
@@ -85,7 +85,7 @@
   background: #014f1f;
   color: white;
   font: inherit;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
   border: none;
   font-weight: bold;
@@ -104,8 +104,8 @@
 
 .main-footer {
   background-color: black;
-  padding: 16px;
-  margin-top: 80px;
+  padding: 1rem;
+  margin-top: 5rem;
 }
 
 .footer-list {

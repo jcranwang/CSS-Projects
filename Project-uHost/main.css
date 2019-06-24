@@ -12,10 +12,10 @@ body {
   background-size: cover;
   background-position: left 10% top 30%;
   background-repeat: no-repeat;
-  height: 500px;
-  padding: 10px;
+  height: 31rem;
+  padding: 0.6rem;
   color: white;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   position: relative;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .plans {
-  width: 90%;
+  width: 90vw;
   text-align: center;
   margin: auto;
 }
@@ -41,8 +41,8 @@ body {
   background-color: #d5ffdc;
   width: 30%;
   text-align: center;
-  padding: 16px;
-  margin: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
   vertical-align: middle;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .plan-list_item {
-  margin: 5px 0;
+  margin: 0.3rem 0;
 }
 
 .plan-highlight {
@@ -73,7 +73,7 @@ body {
 .plan-recommend {
   background-color: white;
   color: #19b84c;
-  padding: 8px;
+  padding: 0.5rem;
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
   border-radius: 10px;
 }
@@ -84,8 +84,8 @@ body {
 
 .key-feature {
   background-color: #ff1b68;
-  padding: 16px;
-  margin-top: 80px;
+  padding: 1rem;
+  margin-top: 5rem;
   text-align: center;  
 }
 
@@ -107,8 +107,8 @@ body {
 }
 
 .feature-pic {
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   background-color: #ffcede;
   border-radius: 50%;
   border: solid 2px black;
