@@ -86,7 +86,7 @@ body {
   background-color: #ff1b68;
   padding: 1rem;
   margin-top: 5rem;
-  text-align: center;  
+  text-align: center;
 }
 
 .key-feature .section-title {
@@ -119,4 +119,50 @@ body {
   color: white;
   text-align: center;
   font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  background-color: white;
+  top: 20%;
+  left: 30%;
+  border: 1px solid;
+  box-shadow: 1px 1px 8px #858585;
+  width: 40%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-buttons_yes {
+  background-color: #014f1f;
+  padding: 0.5rem 0.5rem;
+  color: white;
+  text-decoration: none;
+  font: inherit;
+}
+
+.modal-buttons_yes:hover,
+.modal-buttons_yes:active {
+  background-color: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal-buttons_no {
+  background-color: red;
+  padding: 0.5rem 0.5rem;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+.modal-buttons_no:hover,
+.modal-buttons_no:active {
+  background-color: #ff5454;
+  border-color: #ff5454;
 }
