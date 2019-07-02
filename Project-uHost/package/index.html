@@ -16,7 +16,21 @@
     <div class="backdrop"></div>
     <div class="package-background"></div>
     <header class="main-header">
-      <div><a href="../index.html" class="main-header_brand"><img src="../image/uhost-icon.png" alt="icon" class="main-header_icon"></a></div>
+      <div>
+        <button class="toggle-button">
+          <span class="toggle-button_bar"></span>
+          <span class="toggle-button_bar"></span>
+          <span class="toggle-button_bar"></span>
+        </button>
+      </div>
+      <div>
+        <a href="../index.html" class="main-header_brand"
+          ><img
+            src="../image/uhost-icon.png"
+            alt="icon"
+            class="main-header_icon"
+        /></a>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav_items">
           <li class="main-nav_item">
@@ -31,6 +45,19 @@
         </ul>
       </nav>
     </header>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav_items">
+        <li class="mobile-nav_item">
+          <a href="./index.html">Package</a>
+        </li>
+        <li class="mobile-nav_item">
+          <a href="../customers/index.html">Customers</a>
+        </li>
+        <li class="mobile-nav_item mobile-nav_item--cta">
+          <a href="hosting/index.html">Start hosting</a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <div class="package">
         <a href="">
@@ -80,5 +107,6 @@
         </li>
       </ul>
     </footer>
+    <script src="../shared.js"></script>
   </body>
 </html>
