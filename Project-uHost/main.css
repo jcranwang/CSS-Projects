@@ -25,6 +25,17 @@ body {
   left: 1%;
 }
 
+@media (min-width: 47rem) {
+  .overview {
+    height: 40rem;
+    background-position: 50% 25%;
+  }
+
+  .overview h1 {
+    font-size: 3rem;
+  }
+}
+
 .section-title {
   color: #2ddf5c;
   text-align: center;
