@@ -24,6 +24,7 @@
   &__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all 0.5s;
   }
@@ -38,6 +39,7 @@
     left: 50%;
     transform: translate(-50%, 20%);
     opacity: 0;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all 0.5s;
   }

@@ -96,6 +96,9 @@ body {
 .u-margin-top-large {
   margin-top: 12rem; }
 
+.u-margin-top-medium {
+  margin-top: 6rem; }
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
@@ -105,14 +108,16 @@ body {
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
   border-radius: 10rem;
   padding: 1.5rem 4rem;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -122,7 +127,8 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:focus, .btn:active {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
@@ -230,6 +236,7 @@ body {
     width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     border-radius: 3px;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform 0.8s ease; }
     .card__side--front {
@@ -330,6 +337,7 @@ body {
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all 0.5s; }
   .story__caption {
@@ -342,6 +350,7 @@ body {
     left: 50%;
     transform: translate(-50%, 20%);
     opacity: 0;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all 0.5s; }
   .story:hover .story__image {
@@ -365,6 +374,81 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__group--radio-group {
+  width: 40%;
+  display: inline-block;
+  position: relative;
+  font-size: 1.6rem; }
+
+.form__input {
+  width: 74%;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 3px solid transparent;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #777777;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem 2rem;
+  display: block;
+  transition: all 0.3s; }
+  .form__input:focus {
+    outline: none;
+    border-bottom: 3px solid #55c57a;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2); }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+  .form__input::placeholder {
+    color: #999; }
+
+.form__label {
+  display: block;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.2s; }
+  .form__label--radio {
+    cursor: pointer; }
+
+.form__input:placeholder-shown + .form__label {
+  visibility: hidden;
+  transform: translateY(-4rem);
+  opacity: 0; }
+
+.form__radio-input {
+  margin-right: 3rem;
+  visibility: hidden; }
+
+.form__radio-btn {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border: 5px solid #55c57a;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer; }
+  .form__radio-btn::after {
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #55c57a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0; }
+
+.form__radio-input:checked + .form__label--radio .form__radio-btn::after {
+  opacity: 1; }
 
 .header {
   height: 95vh;
@@ -436,3 +520,16 @@ body {
 .section-stories {
   padding: 15rem 0;
   position: relative; }
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  .section-booking__card {
+    height: 55rem;
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../../img/nat-10.jpg");
+    background-size: cover;
+    border-radius: 3px; }
+  .section-booking__form {
+    width: 50%;
+    padding-top: 5rem;
+    padding-left: 6rem; }
