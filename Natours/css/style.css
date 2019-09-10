@@ -471,6 +471,44 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  color: #f7f7f7;
+  font-size: 1.5rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    display: inline-block;
+    padding-top: 2rem;
+    border-top: 1px solid #777777; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block;
+    font-size: 1.5rem; }
+    .footer__item:not(:last-child) {
+      margin-right: 2rem; }
+  .footer__link:link, .footer__link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f7f7f7;
+    display: inline-block;
+    transition: all 0.2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    transform: rotate(7deg) scale(1.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  .footer__copyright {
+    width: 90%;
+    padding-top: 2rem;
+    border-top: 1px solid #999;
+    float: right; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
