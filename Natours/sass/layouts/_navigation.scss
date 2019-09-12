@@ -1,6 +1,4 @@
 .navigation {
-  //position: absolute;
-
   &__btn {
     position: fixed;
     top: 6.5rem;
@@ -10,6 +8,7 @@
     border-radius: 50%;
     background-color: $color-white;
     z-index: 2000;
+    cursor: pointer;
   }
 
   &__background {
@@ -24,19 +23,26 @@
       $color-primary-dark
     );
     z-index: 1500;
-    transform: scale(200);
+    transition: transform 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
 
   &__nav {
+    height: 100vh;
+    opacity: 0;
+    width: 0;
     position: fixed;
-    z-index: 2000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    z-index: 1500;
     text-align: center;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     list-style: none;
   }
 
@@ -74,4 +80,53 @@
       transform: translateX(1rem);
     }
   }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    width: 100%;
+    opacity: 1;
+  }
+
+  &__btn-background {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &,
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 3.5rem;
+      height: 2px;
+      background-color: $color-grey-dark-3;
+      z-index: 2500;
+      transition: all .2s;
+    }
+
+    &::before {
+      top: -400%;
+    }
+
+    &::after {
+      top: 400%;
+    }
+  }
+
+  &__btn:hover &__btn-background::before {
+    top: -500%;
+  }
+
+  &__btn:hover &__btn-background::after {
+    top: 500%;
+  }
+
 }
