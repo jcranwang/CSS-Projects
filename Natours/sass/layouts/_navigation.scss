@@ -7,6 +7,8 @@
     height: 7rem;
     border-radius: 50%;
     background-color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    text-align: center;
     z-index: 2000;
     cursor: pointer;
   }
@@ -34,7 +36,6 @@
     top: 0;
     left: 0;
     z-index: 1500;
-    text-align: center;
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
@@ -42,6 +43,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
     list-style: none;
   }
@@ -57,24 +59,29 @@
   }
 
   &__link {
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    width: 100%;
-    background-image: linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      $color-white 50%
-    );
-    background-size: 220%;
-    text-decoration: none;
-    color: $color-white;
-    transition: all 0.3s;
-    span {
-      margin-right: 1.5rem;
+    &:link,
+    &:visited {
+      display: inline-block;
+      padding: 1rem 1.5rem;
+      width: 100%;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 220%;
+      text-decoration: none;
+      color: $color-white;
+      transition: all 0.3s;
+      span {
+        display: inline-block;
+        margin-right: 1.5rem;
+      }
     }
 
-    &:hover {
+    &:hover,
+    &:active {
       background-position: 100%;
       color: $color-primary;
       transform: translateX(1rem);
@@ -98,18 +105,24 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: relative;
 
     &,
     &::before,
     &::after {
-      content: "";
       display: block;
-      position: absolute;
       width: 3.5rem;
       height: 2px;
       background-color: $color-grey-dark-3;
       z-index: 2500;
-      transition: all .2s;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: transform 0.3s;
     }
 
     &::before {
@@ -129,4 +142,17 @@
     top: 500%;
   }
 
+  &__checkbox:checked ~ &__btn &__btn-background {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked ~ &__btn &__btn-background::before {
+    top: 0;
+    transform: rotate(125deg);
+  }
+
+  &__checkbox:checked ~ &__btn &__btn-background::after {
+    top: 0;
+    transform: rotate(-125deg);
+  }
 }
