@@ -18,6 +18,9 @@
     display: inline-block;
     padding-top: 2rem;
     border-top: 1px solid $color-grey-dark;
+    @include responsive(tablet-portrait) {
+      width: 100%;
+    }
   }
 
   &__list {
@@ -54,5 +57,9 @@
     padding-top: 2rem;
     border-top: 1px solid $color-grey-dark-2;
     float: right;
+    @include responsive(tablet-portrait){
+      width: 100%;
+      float: none;
+    }
   }
 }

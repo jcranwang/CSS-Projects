@@ -11,6 +11,11 @@
     text-align: center;
     z-index: 2000;
     cursor: pointer;
+
+    @include responsive(tablet-portrait) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__background {
@@ -26,6 +31,11 @@
     );
     z-index: 1500;
     transition: transform 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    @include responsive(tablet-portrait) {
+      top: 4rem;
+      right: 4rem;
+    }
   }
 
   &__nav {
@@ -56,6 +66,10 @@
     &:not(:last-child) {
       margin-bottom: 2px;
     }
+
+    @include responsive(phone) {
+      font-size: 2rem;
+    }
   }
 
   &__link {
@@ -70,7 +84,7 @@
         transparent 50%,
         $color-white 50%
       );
-      background-size: 220%;
+      background-size: 320%;
       text-decoration: none;
       color: $color-white;
       transition: all 0.3s;

@@ -16,18 +16,36 @@
       z-index: 20;
     }
 
+    @include responsive(tablet-portrait) {
+      float: left;
+      width: 33.33333333%;
+      position: relative;
+    }
+
     &--p1 {
       top: -2rem;
+      @include responsive(tablet-portrait) {
+        top: 0;
+        left: 1rem;
+      }
     }
 
     &--p2 {
       right: 0;
       top: 2rem;
+      @include responsive(tablet-portrait) {
+        top: -1rem;
+        z-index: 1000;
+      }
     }
 
     &--p3 {
       left: 20%;
       top: 10rem;
+      @include responsive(tablet-portrait) {
+        top: 0;
+        left: -1rem;
+      }
     }
   }
 
