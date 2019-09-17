@@ -2,6 +2,9 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
+  @include responsive(phone) {
+    padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -19,17 +22,29 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include responsive(phone) {
+    padding: 15rem 0;
+  }
 }
 
 .section-tours {
   background-color: $color-grey-light-1;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+
+  @include responsive(phone) {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 .section-stories {
   padding: 15rem 0;
   position: relative;
+
+  @include responsive(phone) {
+    padding: 10rem 0;
+  }
 }
 
 .section-booking {
@@ -51,11 +66,26 @@
       url("../../img/nat-10.jpg");
     background-size: cover;
     border-radius: 3px;
+
+    @include responsive(tablet-portrait) {
+      height: 60rem;
+      background-image: linear-gradient(
+          to right,
+          rgba($color-white, 0.8) 0%,
+          rgba($color-white, 0.8) 50%,
+          rgba($color-white, 0.8) 100%
+        ),
+        url("../../img/nat-10.jpg");
+    }
   }
 
   &__form {
     width: 50%;
     padding-top: 5rem;
     padding-left: 6rem;
+
+    @include responsive(tablet-portrait) {
+      width: 100%;
+    }
   }
 }

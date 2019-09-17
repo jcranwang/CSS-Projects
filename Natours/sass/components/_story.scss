@@ -9,6 +9,14 @@
   font-size: $default-font-size;
   transform: skewX(-12deg);
 
+  @include responsive(tablet-portrait) {
+    width: 100%;
+  }
+
+  @include responsive(phone) {
+    transform: skewX(0);
+  }
+
   &__figure {
     width: 15rem;
     height: 15rem;
@@ -19,6 +27,10 @@
     clip-path: circle(50% at 50% 50%);
     overflow: hidden;
     transform: translateX(-3rem) skewX(12deg);
+
+    @include responsive(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__image {
@@ -56,5 +68,8 @@
 
   &__text {
     transform: skewX(12deg);
+    @include responsive(phone) {
+      transform: skewX(0);
+    }
   }
 }

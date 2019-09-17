@@ -4,6 +4,9 @@
 
 .u-margin-top-large {
   margin-top: 12rem;
+  @include responsive(tablet-portrait) {
+    margin-top: 6rem;
+  }
 }
 
 .u-margin-top-medium {
@@ -20,4 +23,7 @@
 
 .u-margin-bottom-large {
   margin-bottom: 8rem;
+  @include responsive(tablet-portrait) {
+    margin-bottom: 4rem;
+  }
 }
