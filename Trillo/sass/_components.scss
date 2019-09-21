@@ -1,0 +1,46 @@
+.logo {
+  height: 4rem;
+}
+
+.search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__bar {
+    width: 90%;
+    border-radius: 2.5rem;
+    border: none;
+    padding: 1rem 2rem;
+    margin-right: -3rem;
+    background-color: var(--grey-light-3);
+    font-size: 1.5rem;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--grey-light-4);
+    }
+  }
+
+  &__btn {
+    width: 2rem;
+    border: none;
+    background-color: var(--grey-light-3);
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--grey-dark-3);
+  }
+}
