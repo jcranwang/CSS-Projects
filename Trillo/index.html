@@ -1,52 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="page-header">
-                <img src="./img/logo.png" alt="logo" class="logo">
-                <form class="search">
-                    <input type="text" class="search__bar" placeholder="Search hotels">
-                    <button class="search__btn">
-                        <svg class="search__icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass">
-                        </svg>
-                    </button>
-                </form>
-                <nav class="nav-bar">
-                    <div class="icon-box">
-                        <svg class="icon-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-bookmark">
-                        </svg>
-                        <span class="icon-box__label">7</span>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon-box__icon">
-                            <use xlink:href="img/sprite.svg#icon-chat">
-                        </svg>
-                        <span class="icon-box__label">15</span>
-                    </div>
-                </nav>
-                <div class="user">
-                    <img src="./img/user-3.jpg" alt="avatar" class="user__avatar">
-                    <span class="user__name">Jim</span>
-                </div>
-            </header>
-            <div class="content">
-                <nav class="page-nav">nav</nav>
-                <main class="page-main">
-                    main content
-                </main>
-            </div>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <img src="./img/logo.png" alt="logo" class="logo" />
+        <form class="search">
+          <input type="text" class="search__bar" placeholder="Search hotels" />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass">
+            </svg>
+          </button>
+        </form>
+        <nav class="nav-user">
+          <div class="nav-user__icon-box">
+            <svg class="nav-user__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark">
+            </svg>
+            <span class="nav-user__label">7</span>
+          </div>
+          <div class="nav-user__icon-box">
+            <svg class="nav-user__icon">
+              <use xlink:href="img/sprite.svg#icon-chat">
+            </svg>
+            <span class="nav-user__label">15</span>
+          </div>
+          <div class="nav-user__user">
+            <img
+              src="./img/user-3.jpg"
+              alt="avatar"
+              class="nav-user__user-avatar"
+            />
+            <span class="nav-user__user-name">Jim</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="nav-sidebar">
+            <li class="nav-sidebar__item nav-sidebar__item--active">
+              <a href="#" class="nav-sidebar__link">
+                <svg class="nav-sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-home">
+                </svg>
+                <span class="nav-sidebar__name">Hotel</span>
+              </a>
+            </li>
+            <li class="nav-sidebar__item">
+              <a href="#" class="nav-sidebar__link">
+                <svg class="nav-sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off">
+                </svg>
+                <span class="nav-sidebar__name">Flight</span>
+              </a>
+            </li>
+            <li class="nav-sidebar__item">
+              <a href="#" class="nav-sidebar__link">
+                <svg class="nav-sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-key">
+                </svg>
+                <span class="nav-sidebar__name">Car Travel</span>
+              </a>
+            </li>
+            <li class="nav-sidebar__item">
+              <a href="#" class="nav-sidebar__link">
+                <svg class="nav-sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-map">
+                </svg>
+                <span class="nav-sidebar__name">Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            &copy;2019 by Trillo. All rights reserved.
+          </div>
+        </nav>
+        <main class="hotels">
+          <div class="gallery">
+            <img
+              src="./img/hotel-1.jpg"
+              alt="hotel one image"
+              class="gallery__hotel-img"
+            />
+            <img
+              src="./img/hotel-2.jpg"
+              alt="hotel two image"
+              class="gallery__hotel-img"
+            />
+            <img
+              src="./img/hotel-3.jpg"
+              alt="hotel three image"
+              class="gallery__hotel-img"
+            />
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
