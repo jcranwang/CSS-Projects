@@ -130,13 +130,13 @@ body {
       height: 100%;
       transform: scaleY(0);
       background-color: var(--color-primary);
-      transition: transform 0.2s, width 0.4s 0.2s; }
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
     .nav-sidebar__item:hover::before, .nav-sidebar__item--active::before {
       transform: scaleY(1);
       width: 100%; }
     .nav-sidebar__item:active::before {
       background-color: var(--color-primary-light); }
-  .nav-sidebar__link {
+  .nav-sidebar__link:link, .nav-sidebar__link:visited {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -153,11 +153,86 @@ body {
     margin-right: 2.5rem; }
 
 .copyright {
-  width: 80%;
+  padding: 2.5rem;
   font-size: 1.2rem;
   margin-bottom: 2rem;
   text-align: center;
   color: var(--grey-light-4); }
+
+.gallery {
+  display: flex; }
+  .gallery__hotel-img {
+    width: 100%;
+    display: block; }
+
+.hotel-overview {
+  display: flex;
+  align-items: center;
+  background-color: var(--grey-light-1);
+  border-bottom: 1px solid var(--grey-light-2); }
+  .hotel-overview__name {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-right: 2rem; }
+  .hotel-overview__star-box {
+    display: flex;
+    margin-right: auto;
+    fill: var(--color-primary); }
+  .hotel-overview__star {
+    width: 1.8rem;
+    height: 1.8rem; }
+  .hotel-overview__review {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grey-light-1);
+    background-color: var(--color-primary);
+    padding: 1rem 2rem; }
+  .hotel-overview__score {
+    font-size: 2rem;
+    margin-bottom: -2px; }
+  .hotel-overview__votes {
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+.location {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  font-size: 1.2rem; }
+  .location__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: currentColor; }
+  .location__city {
+    border: none;
+    border-bottom: 1px solid currentColor;
+    cursor: pointer;
+    font-size: inherit;
+    color: inherit;
+    padding-bottom: 1px;
+    margin-left: 0.5rem; }
+    .location__city:hover {
+      color: var(--grey-dark-1); }
+    .location__city:focus {
+      outline: none;
+      animation: heartbeat 1s infinite; }
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
 
 .container {
   max-width: 120rem;
@@ -180,7 +255,6 @@ body {
 
 .sidebar {
   background-color: lightcoral;
-  height: 100%;
   flex: 0 0 18%;
   display: flex;
   flex-direction: column;
@@ -190,4 +264,4 @@ body {
 
 .hotels {
   flex: 1;
-  background-color: lightcyan; }
+  background-color: var(--grey-light-2); }

@@ -90,21 +90,65 @@
         </nav>
         <main class="hotels">
           <div class="gallery">
-            <img
-              src="./img/hotel-1.jpg"
-              alt="hotel one image"
-              class="gallery__hotel-img"
-            />
-            <img
-              src="./img/hotel-2.jpg"
-              alt="hotel two image"
-              class="gallery__hotel-img"
-            />
-            <img
-              src="./img/hotel-3.jpg"
-              alt="hotel three image"
-              class="gallery__hotel-img"
-            />
+            <figure class="gallery__hotel-figure">
+              <img
+                src="./img/hotel-1.jpg"
+                alt="hotel one image"
+                class="gallery__hotel-img"
+              />
+            </figure>
+            <figure class="gallery__hotel-figure">
+              <img
+                src="./img/hotel-2.jpg"
+                alt="hotel two image"
+                class="gallery__hotel-img"
+              />
+            </figure>
+            <figure class="gallery__hotel-figure">
+              <img
+                src="./img/hotel-3.jpg"
+                alt="hotel three image"
+                class="gallery__hotel-img"
+              />
+            </figure>
+          </div>
+          <div class="hotel-overview">
+              <div class="hotel-overview__name">
+                  Hotel California
+              </div>
+              <div class="hotel-overview__star-box">
+                <svg class="hotel-overview__star">
+                    <use xlink:href="img/sprite.svg#icon-star">
+                </svg>
+                <svg class="hotel-overview__star">
+                    <use xlink:href="img/sprite.svg#icon-star">
+                </svg>
+                <svg class="hotel-overview__star">
+                    <use xlink:href="img/sprite.svg#icon-star">
+                </svg>
+                <svg class="hotel-overview__star">
+                    <use xlink:href="img/sprite.svg#icon-star">
+                </svg>
+                <svg class="hotel-overview__star">
+                    <use xlink:href="img/sprite.svg#icon-star">
+                </svg>
+              </div>
+              <div class="location">
+                  <svg class="location__icon">
+                    <use xlink:href="img/sprite.svg#icon-location-pin">
+                  </svg>
+                  <button class="location__city">
+                    California, CA
+                  </button>
+              </div>
+              <div class="hotel-overview__review">
+                  <div class="hotel-overview__score">
+                      9.0
+                  </div>
+                  <div class="hotel-overview__votes">
+                      429 votes
+                  </div>
+              </div>
           </div>
         </main>
       </div>
