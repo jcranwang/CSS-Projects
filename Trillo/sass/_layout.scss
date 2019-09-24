@@ -32,5 +32,27 @@
 
 .hotels {
   flex: 1;
+}
+
+.hotel-details {
   background-color: var(--grey-light-2);
+  padding: 5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-description {
+  flex: 0 0 62.5%;
+  background-color: var(--grey-light-1);
+  border-radius: 3px;
+  padding: 3rem;
+  box-shadow: 0 2rem 3rem rgba(black, 0.2);
+}
+
+.user-reviews {
+  flex: 1;
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
