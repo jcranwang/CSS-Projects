@@ -13,6 +13,13 @@
   --grey-dark-3: #999;
 }
 
+$bp-largest: 75em;
+$bp-big: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 43.75em;
+$bp-smaller: 37.5em;
+$bp-smallest: 31.25em;
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +34,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-big) {
+    font-size: 50%;
+  }
 }
 
 body {
