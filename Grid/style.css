@@ -1,0 +1,35 @@
+.container {
+  width: 1000px;
+  height: 500px;
+  margin: 300px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 20%;
+  grid-template-rows: 10% repeat(3, 1fr) 10%;
+  grid-gap: 30px;
+}
+
+.item {
+  font-size: 30px;
+  background-color:lightblue;
+}
+
+.item-header {
+  grid-column: 1 / -1;
+}
+
+.item-box {
+  grid-row: 2 / 3;
+}
+
+.item-sidebar {
+  grid-row: 2 / 5;
+}
+
+.item-main-content {
+  grid-row: 3 / 5;
+  grid-column: 1 / 4;
+}
+
+.item-footer {
+  grid-column: 1 / -1;
+}
