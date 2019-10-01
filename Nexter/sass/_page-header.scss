@@ -1,5 +1,77 @@
 .page-header {
-  background-color: rgba($color-secondary, 0.8);
+  background-image: linear-gradient(
+      to right,
+      rgba($color-secondary, 0.8),
+      rgba($color-secondary, 0.8)
+    ),
+    url(../img/gal-1.jpeg);
+  background-size: cover;
   grid-row: 1 / 2;
   grid-column: main-start / col-end 5;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr) 0.5fr 1fr 0.5fr 1fr;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  
+
+  &__logo {
+    grid-column: 1 / -1;
+    width: 15rem;
+    justify-self: center;
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    align-self: start;
+    display: grid;
+    grid-gap: 1rem;
+  }
+
+  &__btn {
+    width: 40%;
+  }
+
+  &__sub-title {
+    color: $color-primary;
+    font-size: 2rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-family: $font-primary;
+    color: $color-grey-light-1;
+  }
+
+  &__ads {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  &__seeon {
+    grid-column: 1 / -1;
+    display: grid;
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: $color-grey-light-2;
+    }
+  }
+
+  &__ad {
+    justify-self: center;
+    height: 2rem;
+    filter: brightness(80%);
+  }
 }

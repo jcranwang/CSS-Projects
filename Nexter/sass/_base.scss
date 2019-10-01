@@ -40,7 +40,7 @@ body {
     [side-start] 8rem [side-end main-start] minmax(
       6rem,
       1fr
-    ) [center-start] repeat(8, [col-start] 1fr [col-end])
+    ) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr) [main-end];
   grid-template-rows: 80vh min-content 40vw;
   background-color: $color-grey-light-1;

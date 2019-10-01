@@ -15,9 +15,46 @@
     <title>nexter &mdash; your home, your freedom</title>
   </head>
   <body class="container">
-    <nav class="sidebar">sidebar</nav>
-    <header class="page-header">Header</header>
-    <div class="realtors">Realtors</div>
+    <nav class="sidebar"><div class="sidebar__btn">&nbsp;</div></nav>
+    <header class="page-header">
+        <img src="./img/logo.png" alt="page logo" class="page-header__logo">
+        <div class="page-header__content">
+            <h3 class="page-header__sub-title">Your own home:</h3>
+            <h1 class="page-header__title">The ultimate personal freedom</h1>
+            <button class="btn page-header__btn">View Our Properties</button>
+        </div>
+        <div class="page-header__ads">
+            <div class="page-header__seeon">Seen on</div>
+            <img src="./img/logo-bbc.png" alt="logo bbc" class="page-header__ad">
+            <img src="./img/logo-forbes.png" alt="logo forbes" class="page-header__ad">
+            <img src="./img/logo-techcrunch.png" alt="logo tech crunch" class="page-header__ad">
+            <img src="./img/logo-bi.png" alt="logo business insider" class="page-header__ad">
+        </div>
+    </header>
+    <div class="realtors">
+        <h2 class="realtors__title">Top 3 Realtors</h2>
+        <div class="realtor">
+            <img src="./img/realtor-1.jpeg" alt="realtor one" class="realtor__img">
+            <div class="realtor__description">
+                <h2 class="realtor__name">Erik Feinman</h2>
+                <p class="realtor__results">245 Houses Sold</p>
+            </div>
+        </div>
+        <div class="realtor">
+            <img src="./img/realtor-2.jpeg" alt="realtor two" class="realtor__img">
+            <div class="realtor__description">
+                <h2 class="realtor__name">Kim Brown</h2>
+                <p class="realtor__results">212 Houses Sold</p>
+            </div>
+        </div>
+        <div class="realtor">
+            <img src="./img/realtor-3.jpeg" alt="realtor three" class="realtor__img">
+            <div class="realtor__description">
+                <h2 class="realtor__name">Toby Ramsey</h2>
+                <p class="realtor__results">198 Houses Sold</p>
+            </div>
+        </div>
+    </div>
     <section class="features">
       <div class="feature">
         <svg class="feature__image">
@@ -112,7 +149,7 @@
         distinctio necessitatibus pariatur voluptatibus. Quidem consequatur
         harum volupta!
       </p>
-      <button class="btn">Find your own home</button>
+      <button class="btn story-content__btn">Find your own home</button>
     </div>
     <section class="houses">
       <div class="house">
@@ -149,7 +186,7 @@
           </svg>
           <span class="house__text">$1,200,000</span>
         </div>
-        <button class="house__btn">Contact Realtor</button>
+        <button class="house__btn btn">Contact Realtor</button>
       </div>
       <div class="house">
         <img src="./img/house-2.jpeg" alt="house two" class="house__image" />
@@ -185,7 +222,7 @@
           </svg>
           <span class="house__text">$2,750,000</span>
         </div>
-        <button class="house__btn">Contact Realtor</button>
+        <button class="house__btn btn">Contact Realtor</button>
       </div>
       <div class="house">
         <img src="./img/house-3.jpeg" alt="house three" class="house__image" />
@@ -221,7 +258,7 @@
           </svg>
           <span class="house__text">$850,000</span>
         </div>
-        <button class="house__btn">Contact Realtor</button>
+        <button class="house__btn btn">Contact Realtor</button>
       </div>
       <div class="house">
         <img src="./img/house-4.jpeg" alt="house four" class="house__image" />
@@ -257,7 +294,7 @@
           </svg>
           <span class="house__text">$1,950,000</span>
         </div>
-        <button class="house__btn">Contact Realtor</button>
+        <button class="house__btn btn">Contact Realtor</button>
       </div>
       <div class="house">
         <img src="./img/house-5.jpeg" alt="house five" class="house__image" />
@@ -293,7 +330,7 @@
           </svg>
           <span class="house__text">$9,500,000</span>
         </div>
-        <button class="house__btn">Contact Realtor</button>
+        <button class="house__btn btn">Contact Realtor</button>
       </div>
       <div class="house">
         <img src="./img/house-6.jpeg" alt="house six" class="house__image" />
@@ -329,10 +366,37 @@
           </svg>
           <span class="house__text">$600,000</span>
         </div>
-        <button class="house__btn">Contact Realtor</button>
+        <button class="house__btn btn">Contact Realtor</button>
       </div>
     </section>
-    <section class="gallery">Gallery</section>
-    <footer class="page-footer">footer</footer>
+    <section class="gallery">
+        <figure class="gallery__fig-box--1"><img src="./img/gal-1.jpeg" alt="gallery 1" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--2"><img src="./img/gal-2.jpeg" alt="gallery 2" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--3"><img src="./img/gal-3.jpeg" alt="gallery 3" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--4"><img src="./img/gal-4.jpeg" alt="gallery 4" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--5"><img src="./img/gal-5.jpeg" alt="gallery 5" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--6"><img src="./img/gal-6.jpeg" alt="gallery 6" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--7"><img src="./img/gal-7.jpeg" alt="gallery 7" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--8"><img src="./img/gal-8.jpeg" alt="gallery 8" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--9"><img src="./img/gal-9.jpeg" alt="gallery 9" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--10"><img src="./img/gal-10.jpeg" alt="gallery 10" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--11"><img src="./img/gal-11.jpeg" alt="gallery 11" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--12"><img src="./img/gal-12.jpeg" alt="gallery 12" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--13"><img src="./img/gal-13.jpeg" alt="gallery 13" class="gallery__img"></figure>
+        <figure class="gallery__fig-box--14"><img src="./img/gal-14.jpeg" alt="gallery 14" class="gallery__img"></figure>
+    </section>
+    <footer class="page-footer">
+        <nav class="page-footer__nav">
+            <ul class="page-footer__list">
+                <li class="page-footer__item"><a href="" class="page-footer__link">Find Your Dream Home</a></li>
+                <li class="page-footer__item"><a href="" class="page-footer__link">Request Proposal</a></li>
+                <li class="page-footer__item"><a href="" class="page-footer__link">Download Home Planner</a></li>
+                <li class="page-footer__item"><a href="" class="page-footer__link">Contact us</a></li>
+                <li class="page-footer__item"><a href="" class="page-footer__link">Submit your property</a></li>
+                <li class="page-footer__item"><a href="" class="page-footer__link">Come work with us</a></li>
+            </ul>
+        </nav>
+        <p class="page-footer__copyright">&copy;Copyright 2017 by Jonas Schmedtmann. Designed by Jonas, implemented by Jason Wang</p>
+    </footer>
   </body>
 </html>

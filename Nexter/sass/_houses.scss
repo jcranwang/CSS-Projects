@@ -11,7 +11,7 @@
 .house {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 5rem;
   justify-items: start;
   background-color: rgba($color-grey-light-2, 0.2);
 
@@ -52,6 +52,11 @@
   &__text {
     font-size: 1.5rem;
     color: $color-grey-dark-1;
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
+    width: 100%;
   }
 }
 
