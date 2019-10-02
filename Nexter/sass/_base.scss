@@ -14,6 +14,12 @@ $color-grey-dark-2: #6d5d4b;
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
+// Responsive break points
+$bp-big: 75em;
+$bp-large: 60em;
+$bp-medium: 53em;
+$bp-small: 34em;
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +34,10 @@ html {
 *::after {
   box-sizing: inherit;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-big) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -37,11 +47,22 @@ body {
   line-height: 1.6;
   display: grid;
   grid-template-columns:
-    [side-start] 8rem [side-end main-start] minmax(
-      6rem,
-      1fr
-    ) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [side-start] 8rem [side-end main-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr) [main-end];
   grid-template-rows: 80vh min-content 40vw;
   background-color: $color-grey-light-1;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: [main-start] minmax(6rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      ) [center-end] minmax(6rem, 1fr) [main-end];
+    
+    grid-template-rows: 6rem 80vh min-content 40vw;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 6rem 80vh;
+  }
 }

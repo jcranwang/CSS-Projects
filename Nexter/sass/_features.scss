@@ -1,6 +1,6 @@
 .features {
   background-color: $color-grey-light-1;
-  grid-row: 2 / 3;
+  //grid-row: 2 / 3;
   grid-column: center-start / center-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));

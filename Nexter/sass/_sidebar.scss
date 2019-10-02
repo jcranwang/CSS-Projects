@@ -1,7 +1,11 @@
 .sidebar {
   background-color: $color-primary;
-  grid-row: 1 / 7;
+  //grid-row: 1 / 7;
   grid-column: side-start / side-end;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: main-start / main-end;
+  }
   
   &__btn {
     width: 60%;
@@ -27,6 +31,11 @@
 
     &::after {
       transform: translateY(10px);
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 5rem;
+      margin-right: 3rem;
     }
   }
 }

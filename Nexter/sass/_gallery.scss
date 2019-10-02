@@ -1,6 +1,6 @@
 .gallery {
   background-color: rgba($color-grey-light-2, 0.2);
-  grid-row: 5 / 6;
+  //grid-row: 5 / 6;
   grid-column: main-start / main-end;
   display: grid;
   grid-template-rows: repeat(8, 5vw);
